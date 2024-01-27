@@ -1,0 +1,139 @@
+/*
+ * jQuery Dynatable plugin 0.3.1
+ *
+ * Copyright (c) 2014 Steve Schwartz (JangoSteve)
+ *
+ * Dual licensed under the AGPL and Proprietary licenses:
+ *   http://www.dynatable.com/license/
+ *
+ * Date: Tue Jan 02 2014
+ */
+ @import url('font.css');
+ html, body{
+	direction:ltr !important;
+	height:100%;
+}
+td, th{
+ text-align: Right !important;
+ }
+#wrap{
+	min-height:100%;
+	position:relative;
+ }
+#main{
+	padding-bottom:40px; /* Height of the footer element */
+ }
+#iso_title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5d5d5d;
+    margin: 41px 0 32px 0;
+    position: relative; /* added so the position absolute will work */
+}
+#iso_title:before {
+    background-image: url('Documents-icon.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding: 128px 128px 0 0;
+    content:"\00a0"; 
+    /* added */
+    position: absolute;
+    left: 0;
+    top: -70px;
+    margin-top: -7px; /* half the height of the image, to center it */
+}
+#iso_title > small{
+	position: relative;
+	top: 15px;
+}
+.footer {
+	background:#ebebeb;
+	width:100%;
+	height:60px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.footer p{
+	font-size: 11px;
+	padding-right: 5em;
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: #4C9ED9 !important;
+ }
+ 
+.dynatable-per-page, #dynatable-record-count-table_id{
+	left: 20px;
+	position: absolute;
+ }
+th {
+  background: #006a72;
+}
+th a {
+  color: #fff;
+}
+th a:hover {
+  color: #FFF300;
+  text-decoration: none;
+}
+
+
+
+.dynatable-search {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.dynatable-pagination-links {
+  float: right;
+  margin-bottom: 40px;
+}
+
+.dynatable-record-count {
+  display: block;
+  padding: 5px 0;
+}
+
+.dynatable-pagination-links span,
+.dynatable-pagination-links li {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.dynatable-page-link,
+.dynatable-page-break {
+  display: block;
+  padding: 5px 7px;
+}
+
+.dynatable-page-link {
+  cursor: pointer;
+}
+
+.dynatable-active-page,
+.dynatable-disabled-page {
+  cursor: text;
+}
+.dynatable-active-page:hover,
+.dynatable-disabled-page:hover {
+  text-decoration: none;
+}
+
+.dynatable-active-page {
+  background: #B0ACAC;
+  border-radius: 5px;
+  color: #fff;
+}
+.dynatable-active-page:hover {
+  color: #fff;
+}
+.dynatable-disabled-page,
+.dynatable-disabled-page:hover {
+  background: none;
+  color: #999;
+}
+
+a:hover , a:active {
+  color: #227d00;
+}
