@@ -58,15 +58,12 @@ td, th{
 .footer p{
 	font-size: 11px;
 	padding-right: 5em;
+    text-align: center;
 }
 .navbar-default .navbar-nav > li > a:focus {
   color: #4C9ED9 !important;
  }
- 
-.dynatable-per-page, #dynatable-record-count-table_id{
-	left: 20px;
-	position: absolute;
- }
+
 th {
   background: #006a72;
 }
@@ -79,12 +76,6 @@ th a:hover {
 }
 
 
-
-.dynatable-search {
-  float: right;
-  margin-bottom: 10px;
-}
-
 .dynatable-pagination-links {
   float: right;
   margin-bottom: 40px;
@@ -93,12 +84,6 @@ th a:hover {
 .dynatable-record-count {
   display: block;
   padding: 5px 0;
-}
-
-.dynatable-pagination-links span,
-.dynatable-pagination-links li {
-  display: inline-block;
-  margin: 0 2px;
 }
 
 .dynatable-page-link,
@@ -136,4 +121,40 @@ th a:hover {
 
 a:hover , a:active {
   color: #227d00;
+}
+
+@media screen and (max-width: 600px) {
+    .dynatable-search {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .dynatable-pagination-links span,
+    .dynatable-pagination-links li {
+        display: inline-block;
+    }
+    .dynatable-per-page, #dynatable-record-count-table_id{
+        left: 20px;
+    }
+}
+@media screen and (min-width: 601px) {
+    .dynatable-per-page, #dynatable-record-count-table_id{
+        left: 20px;
+        position: absolute;
+    }
+
+    .dynatable-search {
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    .dynatable-per-page, #dynatable-record-count-table_id {
+        left: 20px;
+        position: absolute;
+    }
+
+    .dynatable-pagination-links span,
+    .dynatable-pagination-links li {
+        display: inline-block;
+        margin: 0 2px;
+    }
 }

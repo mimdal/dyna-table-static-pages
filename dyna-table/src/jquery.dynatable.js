@@ -70,7 +70,7 @@
             recordCountPlacement: 'after',
             paginationLinkTarget: null,
             paginationLinkPlacement: 'after',
-            paginationPrev: 'previous',
+            paginationPrev: 'pre',
             paginationNext: 'next',
             paginationGap: [1,2,2,1],
             searchTarget: null,
@@ -665,7 +665,7 @@
         var $pageLinks = $('<ul></ul>', {
               id: 'dynatable-pagination-links-' + element.id,
               'class': 'dynatable-pagination-links',
-              html: '<span>page: </span>'
+              html: ''
             }),
             pageLinkClass = 'dynatable-page-link',
             activePageClass = 'dynatable-active-page',
